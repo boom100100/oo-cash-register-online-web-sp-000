@@ -21,7 +21,7 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     self.total=(price * quantity)
-    for (i = 0; i < quantity; i++) {
+    quantity.each {
       @items << title
     }
   end
