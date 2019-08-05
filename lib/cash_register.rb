@@ -20,7 +20,9 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    @items << title
+    for qualtity.each do
+      @items << title
+    end
     self.total=(price * quantity)
 
   end
