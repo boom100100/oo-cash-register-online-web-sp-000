@@ -18,6 +18,7 @@ class CashRegister
     apply_discount
     @total = (@total - (@total * (@discount / 100)))
     @total = @total + arg
+    puts @total
   end
 
   def add_item(title, price, quantity = 1)
