@@ -3,7 +3,7 @@ class CashRegister
   def initialize(disc = 0)
     @total = 0
     @discount = disc
-    
+
   end
 
   def discount
@@ -11,7 +11,7 @@ class CashRegister
   end
 
   def total
-    @total
+    self.apply_discount
   end
 
   def total=(arg)
