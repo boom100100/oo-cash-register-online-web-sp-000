@@ -23,7 +23,7 @@ class CashRegister
     apply_discount
   end
 
-  def apply_discount
+  def apply_discount=
     @total = @total - (@total * (@discount / 100))
     puts @total
   end
