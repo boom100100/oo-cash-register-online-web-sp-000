@@ -20,9 +20,10 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    for qualtity.times do |ignoreElement|
+    qualtity.times do
       @items << title
     end
+
     self.total=(price * quantity)
 
   end
