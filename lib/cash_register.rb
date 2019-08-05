@@ -44,6 +44,9 @@ class CashRegister
   end
 
   def void_last_transaction
+    voidAmount = @transactions.pop[1..-1]
+    voidAmount = price[0] * price[1]
+
   end
 
 end
