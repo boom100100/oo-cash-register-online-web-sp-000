@@ -9,7 +9,7 @@ class CashRegister
     @discount
   end
   def total
-    apply_discount
+    self.apply_discount
     @total
   end
   def total=(arg)
