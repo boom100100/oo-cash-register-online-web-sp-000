@@ -4,7 +4,6 @@ class CashRegister
     @total = 0
     @discount = disc
     apply_discount
-
   end
 
   def discount
