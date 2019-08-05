@@ -14,7 +14,7 @@ class CashRegister
   end
 
   def total=(arg)
-    self.apply_discount
+    apply_discount
     @total = @total + arg
   end
 
