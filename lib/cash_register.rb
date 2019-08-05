@@ -13,7 +13,7 @@ class CashRegister
   def total
     @total = (@total - (@total * (@discount / 100)))
     @total
-    puts @total
+    #puts @total
   end
 
   def total=(arg)
