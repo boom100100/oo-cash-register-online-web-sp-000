@@ -9,7 +9,6 @@ class CashRegister
     @discount
   end
   def total
-    self.apply_discount
     @total
   end
   def total=(arg)
