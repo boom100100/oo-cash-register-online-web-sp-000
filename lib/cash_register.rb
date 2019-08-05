@@ -3,7 +3,6 @@ class CashRegister
   def initialize(disc = 0)
     @total = 0
     @discount = disc
-
   end
 
   def discount
@@ -11,7 +10,7 @@ class CashRegister
   end
 
   def total
-    @total = (@total - (@total * (@discount / 100)))
+    @total
   end
 
   def total=(arg)
@@ -21,6 +20,7 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     self.total=(price * quantity)
+    apply_discount
   end
   def apply_discount
     @total = (@total - (@total * (@discount / 100)))
